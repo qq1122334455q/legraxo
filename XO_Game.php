@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '286278581:AAGz1OY1gNvoLeC4JaLzpr5oHsdD_lBp8nc');
+define('BOT_TOKEN', '286278581:AAHRk182jikLhGAQlMVV_XDGHeskvTHgAm0');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -357,7 +357,7 @@ function callbackMessage($callback){
 }
 
 
-define('WEBHOOK_URL', 'https://xobot-massege.rhcloud.com/');
+define('WEBHOOK_URL', 'https://doozbot-massege.rhcloud.com/');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
