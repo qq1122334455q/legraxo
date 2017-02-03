@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '286278581:AAHRk182jikLhGAQlMVV_XDGHeskvTHgAm0');
+define('BOT_TOKEN', '306435598:AAERBGFnn2mYUKBQwnV_S1jNhYdKzhlKMDc');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -149,11 +149,10 @@ function processMessage($message) {
     $text = $message['text'];
 
     if (strpos($text, "/start") === 0) {
-      apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "اگه تو هم تلگرامت آپدیت باشه این دکمه های شیشه ای رو دیدی صددرصد\n ما با همین دکمه ها براتون چند تا بازی آماده کردیم مثل ایکس او و سنگ کاغذ قیچی \n اگه مایلی با دوستات بازی کنی روی لینک زیر کلیک کن. بعد دوستتو انتخاب کن و منتظر باش که بااکس اینلاین ظاهر شه", 'reply_markup' => array(
-            "inline_keyboard"=>array(
-			    array(array("text"=>"ربات ما","url"=>"https://telegram.me/kalle_mallaghbot")),
+      apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "سلام دوست عزیز :) /n با استفاده از این ربات میتونی با دوستات دوز بازی کنی /n فقط کافیه روی شروع بازی بزنی و دوستت رو انتخاب کنی /n By : @LeGra_Team /n Creator : Gravity"
+			    array(array("text"=>"ربات ما","url"=>"https://telegram.me/LeGrabot")),
 				array(array("text"=>"ارتباط با سازنده","url"=>"https://telegram.me/sonofthegod")),
-			    array(array("text"=>"شروع بازی XO","switch_inline_query"=>md5(date("YMDms"))),array("text"=>"سنگ کاغذ قیچی (به زودی)","callback_data"=>"m"))
+			    array(array("text"=>"شروع بازی XO","switch_inline_query"=>md5(date("YMDms")))
 			)
 		)));
     } 
