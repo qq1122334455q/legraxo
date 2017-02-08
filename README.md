@@ -1,3 +1,3 @@
-# XoBot
-Privaged By : [S.Mikail](https://telegram.me/mlsix)<br>
-How To Install? Join To My Channel [Join Now](https://telegram.me/pluginlua)
+# LeGra XoBot
+Privaged By : [Gravity](https://telegram.me/sonofthegod)<br>
+ Join To My Channel [Join Now](https://telegram.me/LeGra_Team)
